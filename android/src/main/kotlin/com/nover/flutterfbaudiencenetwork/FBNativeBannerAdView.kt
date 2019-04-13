@@ -130,8 +130,11 @@ class FBNativeBannerAd @JvmOverloads constructor(
     adChoicesContainer.addView(adChoicesView)
 
     adTitle.text = nativeBannerAd.advertiserName
-
+    adTitle.setTextColor(titleColor)
     adSocialContext.text = nativeBannerAd.adSocialContext
+    adSocialContext.setTextColor(socialTextColor)
+
+    setBackgroundColor(bgColor)
 
     sponsoredLabel.text = nativeBannerAd.sponsoredTranslation
 
